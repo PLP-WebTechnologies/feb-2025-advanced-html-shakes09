@@ -3,50 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
-    <!-- Adding a meta description for SEO -->
-    <meta name="description" content="A simple webpage to demonstrate HTML5 structure.">
+    <title>Advanced HTML5 Elements and Forms</title>
 </head>
 <body>
 
-    <!-- Header section -->
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Simple Webpage</h1>
-        <p>This is a basic HTML5 structure example.</p>
+        <h1>Welcome to My Advanced HTML5 Page</h1>
+        <p>This page demonstrates various HTML5 elements such as images, lists, tables, and forms.</p>
     </header>
 
-    <!-- Navigation section -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>My Favorite Activities</h2>
+        <ol type="I">
+            <li>Reading</li>
+            <li>Coding</li>
+            <li>Traveling</li>
+            <li>Photography</li>
+            <li>Cooking</li>
+        </ol>
+    </section>
 
-    <!-- Main content section -->
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage content.</p>
-        </section>
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Beautiful Himeji Castle</h2>
+        <img src="https://images.pexels.com/photos/1654748/pexels-photo-1654748.jpeg" alt="Himeji Castle" width="600">
+    </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Here you can find information about me and my website.</p>
-        </section>
+    <!-- Table of 5 Contacts -->
+    <section>
+        <h2>Contact Information</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>1234 Elm St, Springfield</td>
+                <td>+1 555-1234</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>5678 Oak Ave, Rivertown</td>
+                <td>+1 555-5678</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary Johnson</td>
+                <td>2345 Maple Dr, Lakeside</td>
+                <td>+1 555-2345</td>
+                <td>maryjohnson@example.com</td>
+            </tr>
+            <tr>
+                <td>James Brown</td>
+                <td>7890 Pine Blvd, Greenfield</td>
+                <td>+1 555-7890</td>
+                <td>jamesbrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Patricia White</td>
+                <td>3456 Birch Rd, Mountainview</td>
+                <td>+1 555-3456</td>
+                <td>patriciawhite@example.com</td>
+            </tr>
+        </table>
+    </section>
 
-        <section id="services">
-            <h2>Services</h2>
-            <p>Learn about the services I offer here.</p>
-        </section>
-    </main>
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post">
+            <!-- Name Field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
 
-    <!-- Footer section -->
-    <footer>
-        <p>Contact me at: <a href="mailto:example@email.com">example@email.com</a></p>
-    </footer>
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown Field for Country Selection -->
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="ZA">South Africa</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+            </select><br><br>
+
+            <!-- Radio Buttons for Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes for Interests -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Traveling</label><br>
+            <input type="checkbox" id="photography" name="interests" value="photography">
+            <label for="photography">Photography</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
 
 </body>
 </html>
